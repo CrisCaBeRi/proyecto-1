@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  display: flex;
+  margin: 5rem auto;
+  box-shadow: 10px 10px 5px 0px rgba(214, 214, 214, 1);
+  width: 60vw;
+  img {
+    width: 40%;
+  }
+  span {
+    width: 65%;
+    margin: 1.5rem;
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      margin-bottom: 1rem;
+    }
+    strong {
+      font-family: "Courier New", Courier, monospace;
+      font-style: italic;
+      color: rgba(128, 128, 128, 0.557);
+    }
+    h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    hr {
+      margin: 0.5rem 0;
+      border: 0;
+      height: 1px;
+      background: rgba(128, 128, 128, 0.162);
+    }
+    p {
+      margin-top: 1rem;
+      
+    }
+  }
+}
