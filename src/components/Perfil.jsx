@@ -3,6 +3,9 @@ import freddie from "./assets/freddie.jpg";
 import jhon from "./assets/jhon.jpg";
 import brian from "./assets/brian.jpg";
 import roger from "./assets/roger.jpg";
+import x from "./assets/x.png";
+import fb from "./assets/fb.png";
+import ig from "./assets/ig.png";
 
 export default function Perfil({
   image,
@@ -12,6 +15,9 @@ export default function Perfil({
   born,
   death,
   country,
+  igUrl,
+  fbUrl,
+  xUrl,
 }) {
   let imageSinger;
   switch (image) {
@@ -33,7 +39,7 @@ export default function Perfil({
 
   return (
     <article className="profile-container">
-      <img src={imageSinger} alt="" />
+      <img className="image-star" src={imageSinger} alt="" />
       <span>
         <h2>{name}</h2>
         <h3>{rol}</h3>
@@ -47,8 +53,31 @@ export default function Perfil({
         <h3>{country}</h3>
         <strong>Pais</strong>
         <hr />
-        <strong>Historia</strong>
         <p>{description}</p>
+
+        <div className="buttons-group">
+          <button
+            onClick={() => {
+              console.log(igUrl);
+              window.open(igUrl, "_blank");
+            }}
+          >
+            <picture>
+              <img src={ig} alt="Instagram" />
+            </picture>
+          </button>
+          <button onClick={() => window.open(fbUrl, "_blank")}>
+            <picture>
+              <img src={fb} alt="Facebook" />
+            </picture>
+          </button>
+          <button onClick={() => window.open(xUrl, "_blank")}>
+            <picture>
+              <img src={x} alt="X" />
+            </picture>
+          </button>
+        </div>
+
       </span>
     </article>
   );
