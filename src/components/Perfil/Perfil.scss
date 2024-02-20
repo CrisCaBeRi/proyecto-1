@@ -44,23 +44,26 @@
       color: rgba(0, 0, 0, 0.607);
     }
     .buttons-group {
-      margin-top: 1.5rem;
+      margin-top: 2.3rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 4.5rem;
       button {
         background-color: transparent;
         border: none;
-        width: 5rem;
         cursor: pointer;
         transition: 0.1s all ease-in;
         img {
           width: 2rem;
+          filter: grayscale(100%);
         }
       }
       button:hover {
         transform: scale(1.2);
+      }
+      img:hover{
+        filter: none;
       }
     }
   }

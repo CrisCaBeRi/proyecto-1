@@ -1,5 +1,6 @@
 import React from "react";
-import Perfil from "./components/Perfil";
+import Perfil from "./components/Perfil/Perfil";
+import { Contador } from "./components/Contador/Contador";
 
 export const App = () => {
   const integrantesQueen = [
@@ -81,6 +82,7 @@ export const App = () => {
           />
         );
       })}
+      <Contador></Contador>
     </>
   );
 };
